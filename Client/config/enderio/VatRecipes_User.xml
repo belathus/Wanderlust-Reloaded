@@ -249,4 +249,16 @@
       </output>
     </recipe>
    </recipeGroup>
+   <recipeGroup name="Extra Liquids">
+    <recipe name="Poison" energyCost="10000">
+      <input>
+        <itemStack modID="BiomesOPlenty" itemName="foliage" itemMeta="7" slot="0" multiplier="2"/>
+        <itemStack modID="minecraft" itemName="spider_eye" slot="1" multiplier="1.5"/>
+        <fluidStack name="water" multiplier="0.25"/>
+      </input>      
+      <output>
+        <fluidStack name="poison"/>        
+      </output>
+    </recipe>
+  </recipeGroup>
 </VatRecipes>  
