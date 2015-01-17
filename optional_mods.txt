@@ -16,3 +16,6 @@ Mods that need to be disabled once packing up final version:
 
  Client: 
  -Journeymap
+
+ Server:
+ -EiraIRC
