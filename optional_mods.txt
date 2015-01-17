@@ -8,8 +8,8 @@ Mods that need to be disabled once packing up final version:
   ->Nuclear Control 2
   ->Gravisuite
  -MobiusCore
- -Modular Turrets
   ->Opis
+ -Modular Turrets
  -ProjectRed/Blue
  -WorldEdit Forge
  -YABM
