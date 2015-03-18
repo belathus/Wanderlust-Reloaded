@@ -87,6 +87,14 @@ furnace.addRecipe(<ExtraUtilities:decorativeBlock1:9>, <BiomesOPlenty:mud:1>);
   [[<BiomesOPlenty:food:9>, <BiomesOPlenty:food:9>, null],
    [<BiomesOPlenty:food:9>, <BiomesOPlenty:food:9>, null]]);
 
+#make some BoP materials useful.
+furnace.addRecipe(<minecraft:glass>, <BiomesOPlenty:hardSand>, 0.5);			#smelt hardened sand to glass
+furnace.addRecipe(<ThermalFoundation:material:64>, <BiomesOPlenty:gemOre:11>, 0.5);	#smelt malachite to copper
 
+#Factorization's Slag Furnace to process quicksand
+mods.factorization.SlagFurnace.addRecipe(<BiomesOPlenty:mud:1>, <minecraft:glass>, 0.5, <minecraft:brick>, 0.5);
+//mods.factorization.SlagFurnace.addRecipe(<minecraft:sand:1>, <minecraft:glass>, 1, <Railcraft:nugget>, 0.5);
+
+oreDict.cropPersimmon.add(<BiomesOPlenty:food:8>);
 
 
