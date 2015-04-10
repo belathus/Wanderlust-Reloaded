@@ -2,8 +2,8 @@ These mods need to be removed from the server.zip:
 -Inventory Tweaks
 -Journeymap
 -MineMenu
--NEIPlugins(Integration soon)
 -NEIAddons
 -TiC Tooltips
 -WAILA Harvestability
--WTP
+-CustomMainMenu
+-ResourceLoader
