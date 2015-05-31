@@ -1,245 +1,156 @@
 <VatRecipes>  
   <recipeGroup name="EnderIO">
-    <recipe name="Sewage" energyCost="10000">
-      <!-- Unique names can also be used -->
-      <input>
-        <!-- SLOT 0 -->
-        <itemStack modID="minecraft" itemName="poisonous_potato" slot="0" multiplier="8"/>
-        <itemStack modID="minecraft" itemName="potato" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="apple" slot="0" multiplier="3.5"/>             
-        <itemStack modID="minecraft" itemName="wheat" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="wheat_seeds" slot="0" multiplier="2"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="0" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="1" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="2" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="3" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="4" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="5" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="carrot" slot="0" multiplier="3"/>
-        
-        <!-- SLOT 1 -->
-        <itemStack modID="minecraft" itemName="fermented_spider_eye" slot="1" multiplier="2"/>
-        <itemStack modID="Thaumcraft" itemName="ItemZombieBrain" slot="1" multiplier="2"/>
-        <itemStack modID="minecraft" itemName="rotten_flesh" slot="1" multiplier="2"/>
-        <itemStack modID="minecraft" itemName="spider_eye" slot="1" multiplier="2"/>       
-        
-        <!-- LIQUID REQUIRED -->
-        <fluidStack name="water" multiplier="0.75"/>
-      </input>      
-      <output>
-         <fluidStack name="sewage"/>
-      </output>
-    </recipe>
-    
     <recipe name="Hootch" energyCost="10000">
       <!-- If recipe is named the same as it is in core it is overwriten -->
       <input>
         <!-- SLOT 0 -->
-        <itemStack modID="minecraft" itemName="poisonous_potato" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="potato" slot="0" multiplier="3"/>
+		
+		<!-- Vegetables [1]; Nuts [1]; Spices [1]; Grains [2]; Fungi [2]; Fruits [3] - There might be exceptions!  -->
+		
+        <!-- Added All vanilla fruits and vegetables to Hootch -->
+        <itemStack modID="minecraft" itemName="poisonous_potato" slot="0" multiplier="4"/>
         <itemStack modID="minecraft" itemName="apple" slot="0" multiplier="3"/>                         
-        <itemStack modID="minecraft" itemName="wheat" slot="0" multiplier="3"/>
-        <itemStack modID="minecraft" itemName="wheat_seeds" slot="0" multiplier="1.5"/>
-        
-        <!-- Added All Vanilla SAPLINGS and carrots -->
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="0" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="1" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="2" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="3" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="4" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="sapling" itemMeta="5" slot="0" multiplier="4"/>
-        <itemStack modID="minecraft" itemName="carrot" slot="0" multiplier="3"/>
-        
-        <!-- Added ALL PAM's Saplings to Hootch recipe-->
-        <itemStack modID="harvestcraft" itemName="pamappleSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamalmondSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamapricotSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamavocadoSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pambananaSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamcashewSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamcherrySapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamchestnutSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamcinnamonSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamcoconutSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamdateSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamdragonfruitSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamdurianSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamfigSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamgrapefruitSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamlemonSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamlimeSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pammapleSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pammangoSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamnutmegSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamoliveSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamorangeSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampapayaSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampaperbarkSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampeachSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampearSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampecanSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampeppercornSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampersimmonSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampistachioSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamplumSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pampomegranateSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamstarfruitSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamvanillabeanSapling" slot="0" multiplier="4"/>
-        <itemStack modID="harvestcraft" itemName="pamwalnutSapling" slot="0" multiplier="4"/>
-        
-        <!-- Added ALL PAM's Crops & Seeds to Hootch recipe-->
-        
-        <itemStack modID="harvestcraft" itemName="blackberryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="blueberryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="candleberryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="raspberryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="strawberryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cactusfruitItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="asparagusItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="barleyItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="oatsItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="ryeItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cornItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="bambooshootItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cantaloupeItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cucumberItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="wintersquashItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="zucchiniItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="beetItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="onionItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="parsnipItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="peanutItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="radishItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="rutabagaItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="sweetpotatoItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="turnipItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="rhubarbItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="celeryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="garlicItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="gingerItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="spiceleafItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="ediblerootItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="tealeafItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="coffeebeanItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="mustardseedsItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="broccoliItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cauliflowerItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="leekItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="lettuceItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="scallionItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="artichokeItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="brusselsproutItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cabbageItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="whitemushroomItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="beanItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="soybeanItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="bellpepperItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="chilipepperItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="eggplantItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="okraItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="peasItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="tomatoItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cottonItem" slot="0" multiplier="3"/>
-        <itemStack modID="harvestcraft" itemName="pineappleItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="grapeItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="kiwiItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cranberryItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="riceItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="seaweedItemSeedFood" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="blackberryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="blueberryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="candleberryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="raspberryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="strawberryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cactusfruitseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="asparagusseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="barleyseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="oatsseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="ryeseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cornseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="bambooshootseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cantaloupeseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cucumberseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="wintersquashseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="zucchiniseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="beetseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="onionseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="parsnipseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="peanutseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="radishseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="rutabagaseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="sweetpotatoseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="turnipseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="rhubarbseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="celeryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="garlicseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="gingerseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="spiceleafseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="teaseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="coffeeseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="mustardseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="broccoliseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cauliflowerseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="leekseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="lettuceseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="scallionseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="artichokeseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="brusselsproutseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cabbageseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="whitemushroomseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="beanseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="soybeanseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="bellpepperseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="chilipepperseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="eggplantseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="okraseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="peasseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="tomatoseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cottonseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="pineappleseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="grapeseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="kiwiseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="cranberryseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="riceseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="seaweedseedItem" slot="0" multiplier="1.5"/>
-        <itemStack modID="harvestcraft" itemName="almondItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="apricotItem" slot="0" multiplier="3"/>
-        <itemStack modID="harvestcraft" itemName="avocadoItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="bananaItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="cashewItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="cherryItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="chestnutItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="cinnamonItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="coconutItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="dateItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="dragonfruitItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="durianItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="figItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="grapefruitItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="lemonItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="limeItem" slot="0" multiplier="3"/>						
-        <itemStack modID="harvestcraft" itemName="mangoItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="nutmegItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="oliveItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="orangeItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="papayaItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="peachItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="pearItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="pecanItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="peppercornItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="persimmonItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="pistachioItem" slot="0" multiplier="2"/>				
-        <itemStack modID="harvestcraft" itemName="plumItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="pomegranateItem" slot="0" multiplier="3"/>				
+        <itemStack modID="minecraft" itemName="wheat" slot="0" multiplier="2"/>   
+        <!-- Added All PAM's Berry Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="blackberryItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="blueberryItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="candleberryItem" slot="0" multiplier="3"/>	
+        <itemStack modID="harvestcraft" itemName="raspberryItem" slot="0" multiplier="3"/>	
+        <itemStack modID="harvestcraft" itemName="strawberryItem" slot="0" multiplier="3"/>	        
+	    <!-- Added All PAM's Cactus Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="cactusfruitItem" slot="0" multiplier="3"/>	 
+        <!-- Added All PAM's Grass Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="barleyItem" slot="0" multiplier="2"/>				
+        <itemStack modID="harvestcraft" itemName="oatsItem" slot="0" multiplier="2"/>		
+        <itemStack modID="harvestcraft" itemName="bambooshootItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="ryeItem" slot="0" multiplier="2"/>	
+        <itemStack modID="harvestcraft" itemName="cornItem" slot="0" multiplier="2"/>	   		
+        <itemStack modID="harvestcraft" itemName="asparagusItem" slot="0" multiplier="1"/>	  
+        <!-- Added All PAM's Gourd Garden contents to Hootch -->
+        <itemStack modID="minecraft" itemName="pumpkin" slot="0" multiplier="3"/>     		
+        <itemStack modID="harvestcraft" itemName="wintersquashItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="zucchiniItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="cantaloupeItem" slot="0" multiplier="3"/>	
+        <itemStack modID="harvestcraft" itemName="cucumberItem" slot="0" multiplier="1"/>	    
+        <!-- Added All PAM's Ground Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="beetItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="rhubarbItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="radishItem" slot="0" multiplier="1"/>	
+        <itemStack modID="minecraft" itemName="carrot" slot="0" multiplier="1"/>     
+        <itemStack modID="harvestcraft" itemName="sweetpotatoItem" slot="0" multiplier="3"/>	   		
+        <itemStack modID="harvestcraft" itemName="parsnipItem" slot="0" multiplier="1"/>	  		
+        <itemStack modID="minecraft" itemName="potato" slot="0" multiplier="3"/>   		
+        <itemStack modID="harvestcraft" itemName="turnipItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="onionItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="peanutItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="rutabagaItem" slot="0" multiplier="1"/>	
+        <!-- Added All PAM's Herb Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="garlicItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="gingerItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="ediblerootItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="celeryItem" slot="0" multiplier="1"/>	   		
+        <itemStack modID="harvestcraft" itemName="coffeebeanItem" slot="0" multiplier="1"/>	  			
+        <itemStack modID="harvestcraft" itemName="mustardseedsItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="spiceleafItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="tealeafItem" slot="0" multiplier="1"/>	   	
+        <!-- Added All PAM's Leaf Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="scallionItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="cauliflowerItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="cabbageItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="broccoliItem" slot="0" multiplier="1"/>	   		
+        <itemStack modID="harvestcraft" itemName="brusselsproutItem" slot="0" multiplier="1"/>	  			
+        <itemStack modID="harvestcraft" itemName="spinachItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="leekItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="artichokeItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="lettuceItem" slot="0" multiplier="1"/>			
+        <!-- Added All PAM's Mushroom Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="whitemushroomItem" slot="0" multiplier="2"/>				
+        <itemStack modID="minecraft" itemName="brown_mushroom" slot="0" multiplier="2"/>   	
+        <itemStack modID="minecraft" itemName="red_mushroom" slot="0" multiplier="2"/>   			
+        <!-- Added All PAM's Stalk Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="chilipepperItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="eggplantItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="soybeanItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="tomatoItem" slot="0" multiplier="1"/>	   		
+        <itemStack modID="harvestcraft" itemName="bellpepperItem" slot="0" multiplier="1"/>	  			
+        <itemStack modID="harvestcraft" itemName="beanItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="okraItem" slot="0" multiplier="1"/>	
+        <itemStack modID="harvestcraft" itemName="peasItem" slot="0" multiplier="1"/>		
+        <!-- No recipe for PAM's Textile Garden for Hootch -->	
+        <!-- Added All PAM's Tropical Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="pineappleItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="grapeItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="kiwiItem" slot="0" multiplier="3"/>
+        <itemStack modID="minecraft" itemName="melon" slot="0" multiplier="3"/>   			
+        <!-- Added All PAM's Water Garden contents to Hootch -->
+        <itemStack modID="harvestcraft" itemName="cranberryItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="seaweedItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="riceItem" slot="0" multiplier="2"/>
+        <!-- Added All PAM's Fruit Tree fruits to Hootch -->
         <itemStack modID="harvestcraft" itemName="starfruitItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="vanillabeanItem" slot="0" multiplier="3"/>				
-        <itemStack modID="harvestcraft" itemName="walnutItem" slot="0" multiplier="2"/>
-         
+        <itemStack modID="harvestcraft" itemName="vanillabeanItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="orangeItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="lemonItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="limeItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="mangoItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="papayaItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="peachItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="pearItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="persimmonItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="plumItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="pomegranateItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="grapefruitItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="figItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="durianItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="dragonfruitItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="apricotItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="avocadoItem" slot="0" multiplier="3"/>
+        <itemStack modID="harvestcraft" itemName="bananaItem" slot="0" multiplier="3"/>				
+        <itemStack modID="harvestcraft" itemName="cherryItem" slot="0" multiplier="3"/>		
+        <itemStack modID="harvestcraft" itemName="dateItem" slot="0" multiplier="3"/>
+        <!-- Added All PAM's Nut & Spice Tree fruits to Hootch -->
+        <itemStack modID="harvestcraft" itemName="almondItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="nutmegItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="oliveItem" slot="0" multiplier="1"/>
+        <itemStack modID="harvestcraft" itemName="pecanItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="pistachioItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="walnutItem" slot="0" multiplier="1"/>
+        <itemStack modID="harvestcraft" itemName="peppercornItem" slot="0" multiplier="1"/>				
+        <itemStack modID="harvestcraft" itemName="cinnamonItem" slot="0" multiplier="1"/>		
+        <itemStack modID="harvestcraft" itemName="chestnutItem" slot="0" multiplier="1"/>
+        <itemStack modID="harvestcraft" itemName="coconutItem" slot="0" multiplier="1"/>
+        <itemStack modID="harvestcraft" itemName="cashewItem" slot="0" multiplier="1"/>			
+        <!-- Added All Biomes o' Plenty Plants to Hootch -->
+        <itemStack modID="BiomesOPlenty" itemName="food" slot="0"  itemMeta="0" multiplier="3"/> <!-- Berry -->
+        <itemStack modID="BiomesOPlenty" itemName="food" slot="0"  itemMeta="8" multiplier="3"/> <!-- Persimmon -->
+        <itemStack modID="BiomesOPlenty" itemName="food" slot="0"  itemMeta="11" multiplier="1"/> <!-- Turnip -->		
+        <itemStack modID="BiomesOPlenty" itemName="food" slot="0"  itemMeta="2" multiplier="1"/> <!-- Wild Carrot -->		
+        <itemStack modID="BiomesOPlenty" itemName="plants" slot="0"  itemMeta="6" multiplier="1.25"/> <!-- Barley -->		
+        <!-- Added All Growthcraft Plants to Hootch -->
+        <itemStack modID="Growthcraft" itemName="Grapes:grc.grapes" slot="0" multiplier="3"/>
+        <itemStack modID="Growthcraft" itemName="Hops:grc.hops" slot="0" multiplier="1"/>
+        <!-- Added All Natura Plants to Hootch -->
+        <itemStack modID="Natura" itemName="berry" slot="0" itemMeta="0" multiplier="3"/>
+        <itemStack modID="Natura" itemName="berry" slot="0" itemMeta="1" multiplier="3"/>
+        <itemStack modID="Natura" itemName="berry" slot="0" itemMeta="2" multiplier="3"/>
+        <itemStack modID="Natura" itemName="berry" slot="0" itemMeta="3" multiplier="3"/>
+		
         <!-- SLOT 1 -->
          
-        <!-- Added Pam's FLOUR as mod-->
-        <itemStack modID="harvestcraft" itemName="flourItem" slot="1" multiplier="1"/>
-        <itemStack modID="minecraft" itemName="sugar" slot="1" multiplier="1"/>
+        <!-- Added PAM's FLOUR as modifier -->
+        <itemStack modID="harvestcraft" itemName="flourItem" slot="1" multiplier="1.25"/>
+        <!-- Added several Honey types as modifier -->
+        <itemStack modID="harvestcraft" itemName="honeyItem" slot="1" multiplier="1.25"/>
+        <itemStack modID="Forestry" itemName="honeyDrop" slot="1" multiplier="1.25"/>
+        <itemStack modID="Forestry" itemName="honeydew" slot="1" multiplier="1.25"/>
+        <itemStack modID="Growthcraft" itemName="Bees:grc.honeyJar" slot="1" multiplier="1.25"/>
+        <itemStack modID="BiomesOPlenty" itemName="jarFilled" slot="1" multiplier="1.25"/>
+        <!-- Added PAM'S Maple Syrup as modifier -->
+        <itemStack modID="harvestcraft" itemName="maplesyrupItem" slot="1" multiplier="1.25"/>
+        <!-- Added Binnie's Growth Enzyme as modifier -->
+        <itemStack modID="Genetics" itemName="misc" slot="1" itemMeta="4" multiplier="1.5"/>
+		<!-- Added Vanilla Sugar as modifier -->
+		<itemStack modID="minecraft" itemName="sugar" slot="1" multiplier="1"/>
          
         <!-- LIQUID REQUIRED -->
         <fluidStack name="water" multiplier="0.25"/>
@@ -252,12 +163,37 @@
    <recipeGroup name="Extra Liquids">
     <recipe name="Poison" energyCost="10000">
       <input>
-        <itemStack modID="BiomesOPlenty" itemName="foliage" itemMeta="7" slot="0" multiplier="2"/>
-        <itemStack modID="minecraft" itemName="spider_eye" slot="1" multiplier="1.5"/>
+	    <!-- SLOT 0 -->
+		
+        <itemStack modID="BiomesOPlenty" itemName="foliage" itemMeta="7" slot="0" multiplier="3"/>
+        <itemStack modID="minecraft" itemName="spider_eye" slot="0" multiplier="1"/>	
+        <itemStack modID="minecraft" itemName="poisonous_potato" slot="0" multiplier="2"/>
+		<!-- SLOT 1 -->
+        <itemStack modID="minecraft" itemName="nether_wart" slot="1" multiplier="1"/>
+        <itemStack modID="minecraft" itemName="glowstone_dust" slot="1" multiplier="2"/>
+		
+        <!-- LIQUID REQUIRED -->
         <fluidStack name="water" multiplier="0.25"/>
       </input>      
       <output>
         <fluidStack name="poison"/>        
+      </output>
+    </recipe>
+    <recipe name="Ender Goo" energyCost="50000">
+      <input>
+	    <!-- SLOT 0 -->
+		
+        <itemStack modID="BiomesOPlenty" itemName="foliage" itemMeta="7" slot="0" multiplier="1.5"/>
+        <itemStack modID="minecraft" itemName="spider_eye" slot="0" multiplier="1"/>	
+        <itemStack modID="minecraft" itemName="poisonous_potato" slot="0" multiplier="1.25"/>
+		<!-- SLOT 1 -->
+        <itemStack modID="HardcoreEnderExpansion" itemName="end_powder" slot="1" multiplier="3"/>
+		
+        <!-- LIQUID REQUIRED -->
+        <fluidStack name="poison" multiplier="0.25"/>
+      </input>      
+      <output>
+        <fluidStack name="endergoo"/>        
       </output>
     </recipe>
   </recipeGroup>

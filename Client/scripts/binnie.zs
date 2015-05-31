@@ -30,10 +30,6 @@
     [null, <minecraft:diamond>, null],
     [<ore:stickWood>, null, null]]);
 
-	
-
-	
-	
 #Fix for Binnie's machines
 var glassPane = <ore:paneGlass>;
 var gearBronze = <ore:gearBronze>;

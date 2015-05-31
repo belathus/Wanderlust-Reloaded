@@ -1,0 +1,60 @@
+{
+    "fluids":
+    [
+        {
+            "name":"Molten Brass",
+            "textureName": "liquid_brass",
+            "temperature": 1300,
+
+            "density": 3000,
+            "viscosity": 6000,            
+            "lightLevel": 0.7,
+            "isGas": false,
+            "flowLength": 8
+        },
+        {
+            "name":"Molten Dark Iron",
+            "textureName": "liquid_darkiron",
+            "temperature": 1300,
+
+            "density": 3000,
+            "viscosity": 6000,            
+            "lightLevel": 0.7,
+            "isGas": false,
+            "flowLength": 8
+        },
+		{
+            "name":"Molten Osmium",
+            "textureName": "liquid_osmium",
+            "temperature": 1300,
+
+            "density": 3000,
+            "viscosity": 6000,            
+            "lightLevel": 0.7,
+            "isGas": false,
+            "flowLength": 8
+        },
+        {
+            "name":"Molten Yellorium",
+            "textureName": "liquid_yellorium",
+            "temperature": 1300,
+
+            "density": 3000,
+            "viscosity": 6000,            
+            "lightLevel": 0.7,
+            "isGas": false,
+            "flowLength": 8
+        },
+        {
+            "name":"Molten Zinc",
+            "textureName": "liquid_zinc",
+            "temperature": 1300,
+
+            "density": 3000,
+            "viscosity": 6000,            
+            "lightLevel": 0.7,
+            "isGas": false,
+            "flowLength": 8
+        }
+    ]
+}

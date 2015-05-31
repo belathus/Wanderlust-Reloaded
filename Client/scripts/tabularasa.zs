@@ -276,10 +276,10 @@ recipes.addShapeless(<TabulaRasa:RasaItem0>, [<Thaumcraft:blockCustomPlant:3>]);
 recipes.addShapeless(<minecraft:blaze_powder>, [<TabulaRasa:RasaItem0>]);
    
 #Recipe for Enchanted Greatwood
-recipes.addShapeless(<TabulaRasa:RasaItem0:1>.withTag({ench: [{id: 173 as short, lvl: 0 as short}]}) * 4, [<minecraft:iron_axe>, <Thaumcraft:blockMagicalLog>, <Thaumcraft:ItemShard:*>]);
+recipes.addShapeless(<TabulaRasa:RasaItem0:1> * 2, [<Thaumcraft:ItemAxeThaumium>.transformDamage(100), <Thaumcraft:blockMagicalLog>, <Thaumcraft:ItemShard:*>]);
 
 #Recipe for Enchanted Silverwood
-recipes.addShapeless(<TabulaRasa:RasaItem0:2>.withTag({ench: [{id: 173 as short, lvl: 0 as short}]}) * 4, [<Thaumcraft:ItemAxeThaumium>, <Thaumcraft:blockMagicalLog:1>, <Thaumcraft:ItemShard:6>]);
+recipes.addShapeless(<TabulaRasa:RasaItem0:2> * 2, [<Thaumcraft:ItemAxeThaumium>.transformDamage(100), <Thaumcraft:blockMagicalLog:1>, <Thaumcraft:ItemShard:6>]);
 
 #Recipe for Eldritch Stone
 recipes.addShapeless(<TabulaRasa:RasaBlock5:12> * 4, [<Thaumcraft:blockCosmeticSolid:1>, <Thaumcraft:blockCosmeticSolid:1>, <Thaumcraft:blockCosmeticSolid:1>, <Thaumcraft:blockCosmeticSolid:1>, <Thaumcraft:blockCosmeticSolid:1>, <Thaumcraft:ItemResource:17>]);

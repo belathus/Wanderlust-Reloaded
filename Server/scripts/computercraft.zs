@@ -12,6 +12,34 @@ recipes.addShaped(<ComputerCraft:CC-Computer:16384>,
   [<minecraft:light_weighted_pressure_plate>, <ore:circuitTtwo>, <minecraft:light_weighted_pressure_plate>],
   [<minecraft:light_weighted_pressure_plate>, <Mekanism:BasicBlock:10>, <minecraft:light_weighted_pressure_plate>]]);
   
+#Harder recipe for mundane Monitor
+recipes.remove(<ComputerCraft:CC-Peripheral:2>);
+recipes.addShaped(<ComputerCraft:CC-Peripheral:2> * 4,
+ [[<minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>],
+  [<minecraft:heavy_weighted_pressure_plate>, <minecraft:glowstone_dust>, <minecraft:heavy_weighted_pressure_plate>],
+  [<minecraft:heavy_weighted_pressure_plate>, <Mekanism:BasicBlock:10>, <minecraft:heavy_weighted_pressure_plate>]]);
+  
+#Harder recipe for advanced Monitor
+recipes.remove(<ComputerCraft:CC-Peripheral:4>);
+recipes.addShaped(<ComputerCraft:CC-Peripheral:4> * 4,
+ [[<minecraft:light_weighted_pressure_plate>, <minecraft:light_weighted_pressure_plate>, <minecraft:light_weighted_pressure_plate>],
+  [<minecraft:light_weighted_pressure_plate>, <minecraft:glowstone_dust>, <minecraft:light_weighted_pressure_plate>],
+  [<minecraft:light_weighted_pressure_plate>, <Mekanism:BasicBlock:10>, <minecraft:light_weighted_pressure_plate>]]);  
+  
+#Harder recipe for Disk Drive
+recipes.remove(<ComputerCraft:CC-Peripheral>);
+recipes.addShaped(<ComputerCraft:CC-Peripheral>,
+ [[<minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>],
+  [<minecraft:heavy_weighted_pressure_plate>, <ore:circuitTone>, <minecraft:heavy_weighted_pressure_plate>],
+  [<minecraft:heavy_weighted_pressure_plate>, <minecraft:piston>, <minecraft:heavy_weighted_pressure_plate>]]);
+  
+#Harder recipe for Disk Drive
+recipes.remove(<ComputerCraft:CC-Peripheral:3>);
+recipes.addShaped(<ComputerCraft:CC-Peripheral:3>,
+ [[<minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>],
+  [<minecraft:heavy_weighted_pressure_plate>, <ore:circuitTone>, <minecraft:heavy_weighted_pressure_plate>],
+  [<minecraft:heavy_weighted_pressure_plate>, <Thaumcraft:ItemInkwell>, <minecraft:heavy_weighted_pressure_plate>]]); 
+ 
 #Harder recipe for mundane turtle
 recipes.remove(<ComputerCraft:CC-Turtle>);
 recipes.addShaped(<ComputerCraft:CC-Turtle>,

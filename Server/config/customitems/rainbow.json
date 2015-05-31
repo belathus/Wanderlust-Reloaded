@@ -1,0 +1,13 @@
+{
+    "items":
+    [
+        {
+            "name":"Rainbow Cluster",
+            "textureName":"rainbow_cluster"
+        },
+        {
+            "name":"Rainbow Nugget",
+            "textureName":"rainbow_nugget"
+        }
+    ]
+}

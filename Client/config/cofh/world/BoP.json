@@ -1,0 +1,76 @@
+{
+    "Limestone": {
+        "template": "uniform",
+        "block": "BiomesOPlenty:rocks",
+        "material": "stone",
+        "clusterSize": 18,
+        "numClusters": 6,
+        "minHeight": 10,
+        "maxHeight": 60,
+        "retrogen": "false",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+		    {"type": "name", "entry": "Ocean"},
+			{"type": "name", "entry": "River"},
+			{"type": "name", "entry": "FrozenOcean"},
+			{"type": "name", "entry": "FrozenRiver"},
+			{"type": "name", "entry": "Deep Ocean"},
+			{"type": "name", "entry": "Arctic"},
+			{"type": "name", "entry": "Coral Reef"},
+			{"type": "name", "entry": "Kelp Forest"},
+			{"type": "name", "entry": "Lush River"}
+		],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "Siltstone": {
+        "template": "uniform",
+        "block": {"name": "BiomesOPlenty:rocks", "metadata": 2},
+        "material": "stone",
+        "clusterSize": 18,
+        "numClusters": 6,
+        "minHeight": 20,
+        "maxHeight": 110,
+        "retrogen": "true",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "name", "entry": "Plains"},
+			{"type": "name", "entry": "Savanna"},
+			{"type": "name", "entry": "Savanna M"},
+			{"type": "name", "entry": "Savanna Plateau"},
+			{"type": "name", "entry": "Savanna Plateau M"},
+			{"type": "name", "entry": "Chaparral"},
+			{"type": "name", "entry": "Prairie"},
+			{"type": "name", "entry": "Shrubland"},
+			{"type": "name", "entry": "Steppe"},
+			{"type": "name", "entry": "Scrubland"}
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "Shale": {
+        "template": "uniform",
+        "block": {"name": "BiomesOPlenty:rocks", "metadata": 4},
+        "material": "stone",
+        "clusterSize": 18,
+        "numClusters": 6,
+        "minHeight": 10,
+        "maxHeight": 80,
+        "retrogen": "false",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+			{"type": "name", "entry": "Volcano"}
+		],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    }
+}

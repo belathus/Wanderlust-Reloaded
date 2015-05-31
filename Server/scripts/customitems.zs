@@ -54,7 +54,7 @@
   #Cranberry Cupcake
   recipes.addShapeless(<customitems:cranberry_frosted_cupcake>, [<customitems:cupcake_base>, <customitems:cranberry_frosting>]);  
  #Berry Frosting
- recipes.addShapeless(<customitems:berry_frosting>, [<harvestcraft:mixingbowlItem>, <customitems:buttercream_frosting>, <ore:hqmblueberry>, <ore:raspberry>, <Natura:berry:3>]);   
+ recipes.addShapeless(<customitems:berry_frosting>, [<harvestcraft:mixingbowlItem>, <customitems:buttercream_frosting>, <ore:cropBlueberry>, <ore:cropRaspberry>, <Natura:berry:3>]);   
   #Berry Cupcake
   recipes.addShapeless(<customitems:berry_frosted_cupcake>, [<customitems:cupcake_base>, <customitems:berry_frosting>]);  
  #Rose Frosting
@@ -98,13 +98,13 @@
  #Churros
  recipes.addShapeless(<customitems:churros>, [<harvestcraft:bakewareItem>, <ore:foodButter>, <ore:flour>, <harvestcraft:oliveoilItem>, <minecraft:egg>, <minecraft:sugar>]);
  #Raspberry Chocolate Lava Cake
- recipes.addShapeless(<customitems:raspberry_lava_cake>, [<harvestcraft:bakewareItem>, <ore:foodButter>, <ore:flour>, <harvestcraft:chocolatebarItem>, <minecraft:egg>, <minecraft:sugar>, <ore:raspberry>]); 
+ recipes.addShapeless(<customitems:raspberry_lava_cake>, [<harvestcraft:bakewareItem>, <ore:foodButter>, <ore:flour>, <harvestcraft:chocolatebarItem>, <minecraft:egg>, <minecraft:sugar>, <ore:cropRaspberry>]); 
  #Dark Chocolate Fudge
  recipes.addShapeless(<customitems:dark_chocolate_fudge>, [<harvestcraft:saucepanItem>, <minecraft:sugar>, <harvestcraft:heavycreamItem>, <harvestcraft:cocoapowderItem>]);  
  #White Chocolate Fudge
  recipes.addShapeless(<customitems:white_chocolate_fudge>, [<harvestcraft:saucepanItem>, <minecraft:sugar>, <harvestcraft:heavycreamItem>, <harvestcraft:butterItem>, <minecraft:dye:3>]);  
  #Festive Potatoes
- recipes.addShapeless(<customitems:festive_potatoes>, [<harvestcraft:bakewareItem>, <harvestcraft:potatocakesItem>, <harvestcraft:sweetpotatoItem>, <harvestcraft:spiceleafItem>, <harvestcraft:maplecandiedbaconItem>, <Mariculture:materials:12>, <harvestcraft:oliveoilItem>, <harvestcraft:garlicItem>, <harvestcraft:mustardseedsItem>]);  
+ recipes.addShapeless(<customitems:festive_potatoes>, [<harvestcraft:bakewareItem>, <harvestcraft:potatocakesItem>, <harvestcraft:sweetpotatoItem>, <harvestcraft:spiceleafItem>, <harvestcraft:maplecandiedbaconItem>, <ore:foodSalt>, <harvestcraft:oliveoilItem>, <harvestcraft:garlicItem>, <harvestcraft:mustardseedsItem>]);  
  #Vanillekipferl
  recipes.addShapeless(<customitems:vanillekipferl>, [<harvestcraft:bakewareItem>, <ore:foodButter>, <ore:flour>, <harvestcraft:vanillaItem>, <minecraft:egg>, <minecraft:sugar>]); 
  #Zimtstern

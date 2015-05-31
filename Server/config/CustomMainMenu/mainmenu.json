@@ -1,0 +1,183 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "custommainbackround:textures/gui/wlr.png",
+            "posX" : -140,
+            "posY" : 0,
+            "width" : 280,
+            "height" : 108,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -160,
+            "posY" : 121,
+            "width" : 100,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -50,
+            "posY" : 121,
+            "width" : 100,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "posX" : 60,
+            "posY" : 121,
+            "width" : 100,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -100,
+            "posY" : 147,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 2,
+            "posY" : 147,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : -124,
+            "posY" : 147,
+            "width" : 20,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 147,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        },
+
+		"ftb":
+        {
+            "text" : "",
+            "tooltip" : "Feed The Beast",
+            "posX" : 120,
+            "posY" : 145,
+            "width" : 30,
+            "height" : 30,
+            "imageWidth" : 300,
+            "imageHeight" : 300,
+            "texture" : "custommainbackround:textures/gui/ftb.png",
+			"action" : 
+			{
+				"type" : "openLink",
+				"link" : "http://forum.feed-the-beast.com/threads/1-7-10-wanderlust-reloaded-questing-adventure-magic-tech-hqm-over-250-quests-tabula-rasa.52737/"
+			}
+        },
+		
+		"github":
+        {
+            "text" : "",
+            "tooltip" : "Github",
+            "posX" : 150,
+            "posY" : 145,
+            "width" : 30,
+            "height" : 30,
+            "imageWidth" : 512,
+            "imageHeight" : 512,
+            "texture" : "custommainbackround:textures/gui/g.png",
+			"action" : 
+			{
+				"type" : "openLink",
+				"link" : "https://github.com/Belathus/Wanderlust-Reloaded"
+			}
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 90,
+            "posY" : 70,
+            "color" : -256,
+            "alignment" : "top_center",
+            "file" : ""
+        },
+        
+        "panorama":
+        {
+            "images" : "custommainbackround:textures/gui/title/backround/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : true
+        }
+    }
+}

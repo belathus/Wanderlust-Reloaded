@@ -140,3 +140,7 @@ recipes.addShapeless(<minecraft:sugar> * 3, [<harvestcraft:mortarandpestleItem>,
   [[<ore:ingotBrass>, null, <ore:ingotBrass>],
    [<ore:ingotBrass>, <ore:chestWood>, <ore:ingotBrass>],
    [null, <ore:ingotBrass>, null]]);
+   
+#Heat Value for Bowl
+furnace.setFuel(<minecraft:bowl>, 75);
+

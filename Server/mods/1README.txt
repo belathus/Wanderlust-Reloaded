@@ -1,3 +1,4 @@
+
 The folder "optional_mods" is for mods that are optional, thus not activated by default.
 It would be a pain to have mods with ".jar_disabled" in the "mods" folder as it is a pain for server hosts
 to change them to a ".jar", which basically they are activated, so this shall save you a lot of time when
@@ -26,5 +27,4 @@ Project Blue - ProjectRed-Base
 Dependencies on default mods are:
 
 OpenModularTurrets - Thermal Expansion/Foundation
-
 

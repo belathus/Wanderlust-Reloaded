@@ -16,8 +16,8 @@
  
  #Perdito
  mods.thaumcraft.Infusion.addRecipe("INFUSED_POTIONS", <minecraft:wheat_seeds>, [<Thaumcraft:ItemShard:5>, <Thaumcraft:ItemShard:5>, <Thaumcraft:ItemShard:5>, <Thaumcraft:ItemShard:5>], "messis 32, meto 32", <ThaumicTinkerer:infusedSeeds>.withTag({aspectTendencies: {Aspects: []}, mainAspect: {Aspects: [{amount: 1, key: "perditio"}]}}), 5);
-
-#Aer
+ 
+ #Aer
 mods.thaumcraft.Crucible.addRecipe("INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion>, <ThaumicTinkerer:infusedGrain>, "aer 5, auram 5");
 #aqua
 mods.thaumcraft.Crucible.addRecipe("INFUSED_POTIONS", <ThaumicTinkerer:infusedPotion:3>, <ThaumicTinkerer:infusedGrain:3>, "aqua 5, auram 5");

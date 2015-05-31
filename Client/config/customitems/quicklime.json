@@ -1,0 +1,14 @@
+{
+    "items":
+    [
+        {
+            "name":"Quicklime Compound",
+            "textureName":"quicklimemix"
+        },
+        {
+            "name":"Quicklime Bucket",
+            "textureName":"bucket_quicklime",
+            "maxstackSize": 1
+        }
+    ]
+}

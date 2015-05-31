@@ -26,6 +26,39 @@ ore dictionary.
 -->
 
 <AlloySmelterRecipes>
-  
+
+
+  <recipeGroup name="Tinkers Construct">
+
+    <recipe name="Aluminum Brass" energyCost="2000">
+      <input>
+        <itemStack oreDictionary="ingotAluminum" number=3 />
+        <itemStack oreDictionary="ingotCopper" number=1 />
+      </input>
+      <output>
+        <itemStack modID="TConstruct" itemName="materials" itemMeta="14" exp="0.5" />
+      </output>
+    </recipe>
+    <recipe name="Alumite" energyCost="2000">
+      <input>
+        <itemStack oreDictionary="ingotAluminum" number="5" />
+        <itemStack oreDictionary="ingotIron" number="2" />
+        <itemStack oreDictionary="obsidian" number="1" />
+      </input>
+      <output>
+        <itemStack modID="TConstruct" itemName="materials" itemMeta="15" exp="0.5" />
+      </output>
+    </recipe>
+    <recipe name="Alumite" energyCost="2000">
+      <input>
+        <itemStack oreDictionary="ingotAluminium" number="5" />
+        <itemStack oreDictionary="ingotIron" number="2" />
+        <itemStack oreDictionary="obsidian" number="1" />
+      </input>
+      <output>
+        <itemStack modID="TConstruct" itemName="materials" itemMeta="15" exp="0.5" />
+      </output>
+    </recipe>
+  </recipeGroup>
 </AlloySmelterRecipes>  
 

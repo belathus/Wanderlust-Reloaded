@@ -1,0 +1,18 @@
+[
+  {
+    "address": "irc.esper.net",
+    "nick": "IGN|%USERNAME%",
+    "bot": {
+      "ident": "EiraIRC",
+      "description": "EiraIRC Bot"
+    },
+    "settings": {
+      "autoJoin": true
+    },
+    "channels": [
+      {
+        "name": ""
+      }
+    ]
+  }
+]

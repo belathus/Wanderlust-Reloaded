@@ -1,9 +1,9 @@
 #Making the recipe for Atomic Dissasembler harder
 recipes.remove(<Mekanism:AtomicDisassembler:*>);
-recipes.addShaped(<Mekanism:AtomicDisassembler:*>,
- [[<Mekanism:EnrichedAlloy>, <Mekanism:EnergyTablet:100>, <Mekanism:EnrichedAlloy>],
+recipes.addShaped(<Mekanism:AtomicDisassembler:100>,
+ [[<Mekanism:EnrichedAlloy>, <Mekanism:EnergyTablet:*>, <Mekanism:EnrichedAlloy>],
   [<Mekanism:EnrichedAlloy>, <Mekanism:AtomicAlloy>, <Mekanism:EnrichedAlloy>],
-  [<Mekanism:Ingot>, <minecraft:nether_star>, <Mekanism:Ingot>]]);
+  [<Mekanism:Ingot>, <MekanismTools:ObsidianPaxel>, <Mekanism:Ingot>]]);
  
 #Making the recipe for the Digital Miner harder
 recipes.remove(<Mekanism:MachineBlock:4>);
@@ -39,17 +39,16 @@ recipes.addShaped(<MekanismGenerators:Generator:6>,
  [[null, <Mariculture:turbine_titanium>, null],
   [<ore:ingotAluminum>, <BigReactors:BRTurbinePart:4>, <ore:ingotAluminum>],
   [<Mekanism:EnergyTablet:*>, <Mekanism:ControlCircuit:2>, <Mekanism:EnergyTablet:*>]]);
+   
+#Disabling acquirement of Steel with Mekanism
+#mods.mekanism.Infuser.removeRecipe(<Mekanism:EnrichedIron>);
+#mods.mekanism.Infuser.removeRecipe(<Mekanism:Dust:5>);
+
+#Osmium Nugget Support
+recipes.addShaped(<Mekanism:Ingot:1>,
+ [[<customitems:osmium_nugget>, <customitems:osmium_nugget>, <customitems:osmium_nugget>],
+  [<customitems:osmium_nugget>, <customitems:osmium_nugget>, <customitems:osmium_nugget>],
+  [<customitems:osmium_nugget>, <customitems:osmium_nugget>, <customitems:osmium_nugget>]]);
   
-#Making Mekanism's salt compatible with Mariculture
- #Salinator Upgrade T1
- recipes.remove(<Mariculture:upgrade:33>);
- recipes.addShaped(<Mariculture:upgrade:33>,
-  [[<ore:ingotAluminum>, <ore:salt>, <ore:ingotAluminum>],
-   [<ore:salt>, <Mariculture:upgrade:4>, <ore:salt>],
-   [<ore:ingotMagnesium>, <ore:ingotAluminum>, <ore:ingotMagnesium>]]);
- #Beef Oyster Pie
- recipes.remove(<Mariculture:food:9>);
- recipes.addShaped(<Mariculture:food:9>,
-  [[<ore:salt>, <ore:salt>, <ore:salt>],
-   [<minecraft:beef>, <Mariculture:water>, <minecraft:beef>],
-   [<harvestcraft:flourItem>, <minecraft:egg>, <harvestcraft:flourItem>]]);
+recipes.addShapeless(<customitems:osmium_nugget> * 9, [<Mekanism:Ingot:1>]);
+

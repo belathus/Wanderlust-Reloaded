@@ -2,24 +2,12 @@
 recipes.addShaped(<BiomesOPlenty:longGrass>, [[<minecraft:grass>, <minecraft:wheat_seeds>]]); 
 
 #Recipe for Limestone
-recipes.addShaped(<BiomesOPlenty:rocks> * 8,
- [[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
-  [<minecraft:stone>, <harvestcraft:saltItem>, <minecraft:stone>],
-  [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]]);
 furnace.addRecipe(<BiomesOPlenty:rocks:1>, <BiomesOPlenty:rocks>);
 
 #Recipe for Siltstone
-recipes.addShaped(<BiomesOPlenty:rocks:2> * 8,
- [[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
-  [<minecraft:stone>, <minecraft:clay_ball>, <minecraft:stone>],
-  [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]]);
 furnace.addRecipe(<BiomesOPlenty:rocks:3>, <BiomesOPlenty:rocks:2>);
 
 #Recipe for Shale
-recipes.addShaped(<BiomesOPlenty:rocks:4> * 8,
- [[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
-  [<minecraft:stone>, <minecraft:obsidian>, <minecraft:stone>],
-  [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]]);
 furnace.addRecipe(<BiomesOPlenty:rocks:5>, <BiomesOPlenty:rocks:4>);
 
 #Elven Trade to get missing Promised Land's item
@@ -28,6 +16,8 @@ mods.botania.ElvenTrade.addRecipe(<BiomesOPlenty:gems>, [<minecraft:emerald>]);
 mods.botania.ElvenTrade.addRecipe(<minecraft:spawn_egg:307>, [<minecraft:egg>]);
 mods.botania.ElvenTrade.addRecipe(<BiomesOPlenty:flowerVine>, [<minecraft:vine>]);
 mods.botania.ElvenTrade.addRecipe(<BiomesOPlenty:gemOre:1>, [<minecraft:emerald_block>]);
+mods.botania.ElvenTrade.addRecipe(<BiomesOPlenty:misc:4>, [<minecraft:glowstone_dust>]);  
+mods.botania.ElvenTrade.addRecipe(<BiomesOPlenty:crystal>, [<minecraft:glowstone>]);  
 
 #Recipe for Honey Jar
 recipes.addShaped(<BiomesOPlenty:jarFilled>,
@@ -86,15 +76,41 @@ furnace.addRecipe(<ExtraUtilities:decorativeBlock1:9>, <BiomesOPlenty:mud:1>);
  recipes.addShaped(<BiomesOPlenty:hive:3>,
   [[<BiomesOPlenty:food:9>, <BiomesOPlenty:food:9>, null],
    [<BiomesOPlenty:food:9>, <BiomesOPlenty:food:9>, null]]);
+ 
+#Recipe for Turnip Seeds
+recipes.addShapeless(<BiomesOPlenty:turnipSeeds>, [<BiomesOPlenty:food:11>]);
 
-#make some BoP materials useful.
-furnace.addRecipe(<minecraft:glass>, <BiomesOPlenty:hardSand>, 0.5);			#smelt hardened sand to glass
-furnace.addRecipe(<ThermalFoundation:material:64>, <BiomesOPlenty:gemOre:11>, 0.5);	#smelt malachite to copper
+#Nerf of Mudpick
+recipes.remove(<BiomesOPlenty:pickaxeMud>);
+recipes.addShaped(<BiomesOPlenty:pickaxeMud>,
+ [[<BiomesOPlenty:mudball>, <ore:ingotManyullyn>, <BiomesOPlenty:mudball>],
+  [null, <ore:stickWood>, null],
+  [null, <ore:stickWood>, null]]);
+  
+#Boost of Poison Darts
+recipes.remove(<BiomesOPlenty:dart:1>);
+recipes.addShaped(<BiomesOPlenty:dart:1> * 8,
+ [[<BiomesOPlenty:dart>, <BiomesOPlenty:dart>, <BiomesOPlenty:dart>],
+  [<BiomesOPlenty:dart>, <BiomesOPlenty:jarFilled:1>, <BiomesOPlenty:dart>],
+  [<BiomesOPlenty:dart>, <BiomesOPlenty:dart>, <BiomesOPlenty:dart>]]);
+  
+#Adjustment of Ambrosia
+recipes.remove(<BiomesOPlenty:food:10>);
+recipes.addShapeless(<BiomesOPlenty:food:10> * 1, [<harvestcraft:potItem>, <Thaumcraft:ItemWispEssence>, <BiomesOPlenty:honeyBlock>, <BiomesOPlenty:flowers2:6>, <BiomesOPlenty:coral1:11>, <BiomesOPlenty:food>, <BiomesOPlenty:plants:15>, <BiomesOPlenty:misc:10>, <minecraft:sugar>]);
 
-#Factorization's Slag Furnace to process quicksand
-mods.factorization.SlagFurnace.addRecipe(<BiomesOPlenty:mud:1>, <minecraft:glass>, 0.5, <minecraft:brick>, 0.5);
-//mods.factorization.SlagFurnace.addRecipe(<minecraft:sand:1>, <minecraft:glass>, 1, <Railcraft:nugget>, 0.5);
+#Nerfing Flesh blocks
+val blockMeatRaw = <ore:blockMeatRaw>;
+blockMeatRaw.remove(<BiomesOPlenty:flesh>);
 
+#make some BoP materials useful
+furnace.addRecipe(<minecraft:glass>, <BiomesOPlenty:hardSand>, 0.5); #smelt hardened sand to glass
+furnace.addRecipe(<ThermalFoundation:material:64>, <BiomesOPlenty:gemOre:11>, 0.5); #smelt malachite to copper
+
+#Coral to dye
+recipes.addShapeless(<minecraft:dye:14>, [<BiomesOPlenty:coral1:13>]);
+recipes.addShapeless(<minecraft:dye:9>, [<BiomesOPlenty:coral1:12>]);
+recipes.addShapeless(<minecraft:dye:5>, [<BiomesOPlenty:coral1:15>]);
+recipes.addShapeless(<BiomesOPlenty:misc:5>, [<BiomesOPlenty:coral1:14>]);
+
+#Add persimmon to the oredictionary
 oreDict.cropPersimmon.add(<BiomesOPlenty:food:8>);
-
-

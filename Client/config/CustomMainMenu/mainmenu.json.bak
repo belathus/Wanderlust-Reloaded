@@ -1,0 +1,118 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "custommainbackround:textures/gui/wanderlustreloaded.png",
+            "posX" : -230,
+            "posY" : 0,
+            "width" : 560,
+            "height" : 200,
+            "alignment" : "center"
+        }
+    },
+    
+    "buttons":
+    {
+
+    
+        "github":
+        {
+            "text" : "",
+            "tooltip" : "Github",
+            "link" : "https://github.com/Belathus/Wanderlust-Reloaded",
+            "posX" : 150,
+            "posY" : 160,
+            "width" : 30,
+            "height" : 30,
+            "imageWidth" : 512,
+            "imageHeight" : 512,
+            "texture" : "custommainbackround:textures/gui/g.png"
+        },
+		
+        "ftb":
+        {
+            "text" : "",
+            "tooltip" : "Feed The Beast",
+            "link" : "http://forum.feed-the-beast.com/threads/1-7-10-wanderlust-reloaded-questing-adventure-magic-tech-hqm-over-250-quests-tabula-rasa.52737/",
+            "posX" : 120,
+            "posY" : 160,
+            "width" : 30,
+            "height" : 30,
+            "imageWidth" : 300,
+            "imageHeight" : 300,
+            "texture" : "custommainbackround:textures/gui/ftb.png"
+        },
+		
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -200,
+            "posY" : 58,
+            "width" : 80,
+            "height" : 20,
+            "texture" : "custommainbackround:textures/gui/singleplayer.png"
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -200,
+            "posY" : 82,
+            "width" : 80,
+            "height" : 20,
+            "texture" : "custommainbackround:textures/gui/singleplayer.png"
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -200,
+            "posY" : 106,
+            "width" : 80,
+            "height" : 20,
+            "texture" : "custommainbackround:textures/gui/singleplayer.png"
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : -200,
+            "posY" : 130,
+            "width" : 80,
+            "height" : 20,
+            "texture" : "custommainbackround:textures/gui/singleplayer.png"
+        },
+        
+        "refresh":
+        {
+            "text" : "test",
+            "posX" : 0,
+            "posY" : 132,
+            "width" : 20,
+            "height" : 20
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "mojang",
+            "posX" : -187,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "top_right"
+        }
+    },
+    
+    "other":
+    {
+        "panorama":
+        {
+            "images" : "custommainbackround:textures/gui/title/backround/panorama_%c.png",
+            "blur" : true,
+            "gradient" : false
+        }
+    }
+}

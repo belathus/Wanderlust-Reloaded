@@ -1,4 +1,6 @@
+Script handler ready. Waiting for a while to ensure all other mods are done messing with NEI.
 Starting NEI Filter scripting. This might take a moment to load all the modules...
+Engine: JAVASCRIPT
 Setting up Java Library...
 Setting up FML Library...
 Setting up NEI Library...
@@ -41,12 +43,13 @@ Found creative tab: gardenCore
 Found creative tab: gardenTrees
 Found creative tab: Genetics
 Found creative tab: tabGraveStone
+Found creative tab: IC2
 Found creative tab: tabGrowthCraft
 Found creative tab: tabGrCCellar
 Found creative tab: tabHardcoreEnderExpansion
 Found creative tab: Hardcore Questing Mode
+Found creative tab: IC2 NuclearControl 2
 Found creative tab: jabba
-Found creative tab: MFFS
 Found creative tab: magicBees
 Found creative tab: food
 Found creative tab: mariculture.core
@@ -64,20 +67,27 @@ Found creative tab: natura.nether
 Found creative tab: natura.trees
 Found creative tab: tabOpenBlocks
 Found creative tab: OpenComputers
+Found creative tab: tabOpenPeripheralAddons
 Found creative tab: tabPneumaticCraft
+Found creative tab: TConstructBlocks
+Found creative tab: core
+Found creative tab: expansion
+Found creative tab: exploration
+Found creative tab: ill
+Found creative tab: int
+Found creative tab: trans
+Found creative tab: transport
 Found creative tab: rio
-Found creative tab: RPGAdvMod
 Found creative tab: railcraft
 Found creative tab: Random Things
 Found creative tab: redstonearsenal.creativeTab
 Found creative tab: steamcraft
 Found creative tab: steamcraftTools
+Found creative tab: sfm
 Found creative tab: SC2Blocks
 Found creative tab: SC2Modules
 Found creative tab: SC2Items
-Found creative tab: sfm
 Found creative tab: steves_production
-Found creative tab: TConstructBlocks
 Found creative tab: TConstructWeaponry
 Found creative tab: TConstructParts
 Found creative tab: TConstructTools
@@ -88,11 +98,14 @@ Found creative tab: thaumcraft
 Found creative tab: thaumicExploration
 Found creative tab: ThaumicTinkerer
 Found creative tab: brewing
+Found creative tab: thermaldynamics.creativeTab
 Found creative tab: thermalexpansion.creativeTabBlocks
 Found creative tab: thermalexpansion.creativeTabItems
 Found creative tab: thermalexpansion.creativeTabTools
 Found creative tab: thermalexpansion.creativeTabFlorbs
 Found creative tab: thermalfoundation.creativeTab
+Found creative tab: thermalfoundation.creativeTabArmor
+Found creative tab: thermalfoundation.creativeTabTools
 Found creative tab: travellersgear
 Found creative tab: twilightForest
 Found creative tab: aobd
@@ -102,8 +115,12 @@ Found creative tab: Ars Magica Items
 Found creative tab: Ars Magica Blocks
 Found creative tab: Battlegear2
 Found creative tab: betterstorage
-Found creative tab: tabChiselBlocks
+Found creative tab: tabWoodChiselBlocks
+Found creative tab: tabModdedChiselBlocks
+Found creative tab: tabStoneChiselBlocks
+Found creative tab: tabOtherChiselBlocks
 Found creative tab: tabChisel
+Found creative tab: tabMetalChiselBlocks
 Found creative tab: tabComputronics
 Found creative tab: Festive Food
 Found creative tab: Frosting
@@ -111,14 +128,12 @@ Found creative tab: Christmas Baubles
 Found creative tab: enhancedportals
 Found creative tab: Extra_Cells
 Found creative tab: factorizationTab
-Found creative tab: FLORA
-Found creative tab: Fluxed Trinkets
 Found creative tab: funkylocomotion
 Found creative tab: tabHarvestCraft2
 Found creative tab: tabHarvestCraft3
 Found creative tab: tabHarvestCraft
-Found creative tab: tabKitchen
 Found creative tab: malisisdoors
+Found creative tab: openmodularturrets
 Found creative tab: PATab
 Found creative tab: props.main
 Found creative tab: search
@@ -134,290 +149,312 @@ Loading table of contents for module: custom_nei_filters, 1.0, Author: denoflion
 Bootstrap setting found. Loading: Bootstrap.js
 Loading: vanilla.js
 The function hide_block is deprecated. Please use hide instead! This function will be removed in a future version!
-override called. Params: minecraft, portal
 hide called. Params: minecraft, portal
+Regex match found! minecraft:portal matches minecraft:portal.
 Found ItemStack minecraft:portal. 64xtile.portal@0
 The function hide_block_vanilla is deprecated. Please use hide instead! This function will be removed in a future version!
 The function hide_block is deprecated. Please use hide instead! This function will be removed in a future version!
-override called. Params: minecraft, end_portal
 hide called. Params: minecraft, end_portal
+Regex match found! minecraft:end_portal matches minecraft:end_portal.
 Found ItemStack minecraft:end_portal. 64xtile.null@0
 The function hide_block_vanilla is deprecated. Please use hide instead! This function will be removed in a future version!
 The function hide_block is deprecated. Please use hide instead! This function will be removed in a future version!
-override called. Params: minecraft, mob_spawner
 hide called. Params: minecraft, mob_spawner
+Regex match found! minecraft:mob_spawner matches minecraft:mob_spawner.
 Found ItemStack minecraft:mob_spawner. 64xtile.mobSpawner@0
 The function hide_block_vanilla is deprecated. Please use hide instead! This function will be removed in a future version!
 The function hide_block is deprecated. Please use hide instead! This function will be removed in a future version!
-override called. Params: minecraft, fire
 hide called. Params: minecraft, fire
+Regex match found! minecraft:fire matches minecraft:fire.
 Found ItemStack minecraft:fire. 64xtile.fire@0
 The function hide_block_vanilla is deprecated. Please use hide instead! This function will be removed in a future version!
 The function hide_block is deprecated. Please use hide instead! This function will be removed in a future version!
-override called. Params: minecraft, water
 hide called. Params: minecraft, water
+Regex match found! minecraft:water matches minecraft:water.
 Found ItemStack minecraft:water. 64xtile.water@0
 The function hide_block_vanilla is deprecated. Please use hide instead! This function will be removed in a future version!
 The function hide_block is deprecated. Please use hide instead! This function will be removed in a future version!
-override called. Params: minecraft, lava
 hide called. Params: minecraft, lava
+Regex match found! minecraft:lava matches minecraft:lava.
 Found ItemStack minecraft:lava. 64xtile.lava@0
 The function hide_block_vanilla is deprecated. Please use hide instead! This function will be removed in a future version!
 Loading: ThermalExpansion.js
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: florb, 0,1
-override called. Params: ThermalExpansion, florb
+override called. Params: ThermalExpansion, florb, 0,1
+Regex match found! ThermalExpansion:florb matches ThermalExpansion:florb.
 Found ItemStack ThermalExpansion:florb. 16xitem.thermalexpansion.florb@0
 Loading: Mekanism.js
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: GasTank, 100
-override called. Params: Mekanism, GasTank
+override called. Params: Mekanism, GasTank, 100
+Regex match found! Mekanism:GasTank matches Mekanism:GasTank.
 Found ItemStack Mekanism:GasTank. 1xtile.GasTank@0
 Loading: ForgeMicroblock.js
-getRandomMaterial called. Returned: tile.Decoration.BrickFancy_4
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, tile.Decoration.BrickFancy_4
+getRandomMaterial called. Returned: tile.BasicBlock_5
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, tile.BasicBlock_5
 Loading: ExtraUtilities.js
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: drum, 0,1
-override called. Params: ExtraUtilities, drum
+override called. Params: ExtraUtilities, drum, 0,1
+Regex match found! ExtraUtilities:drum matches ExtraUtilities:drum.
 Found ItemStack ExtraUtilities:drum. 64xtile.extrautils:drum@0
-getRandomMaterial called. Returned: tile.Darkleaves0
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, tile.Darkleaves0
+getRandomMaterial called. Returned: tile.BasicBlock2
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, tile.BasicBlock2
 Loading: BuildCraft.js
-getFacadesSize called. Returned: 1573
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.BCObject). Params: 208
+getFacadesSize called. Returned: 3550
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.BCObject). Params: 639
 Loading: Bibliocraft.js
-ReflectAllBlocks called. Params: jds.bibliocraft.blocks.BlockLoader. Total non-null blocks reflected: 30
-ReflectAllItems called. Params: jds.bibliocraft.items.ItemLoader. Total non-null items reflected: 26
+ReflectAllBlocks called. Params: jds.bibliocraft.blocks.BlockLoader. Total non-null blocks reflected: 33
+ReflectAllItems called. Params: jds.bibliocraft.items.ItemLoader. Total non-null items reflected: 30
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: Bibliotheca, 0
-override called. Params: BiblioCraft, Bibliotheca
+override called. Params: BiblioCraft, Bibliotheca, 0
+Regex match found! BiblioCraft:Bibliotheca matches BiblioCraft:Bibliotheca.
 Found ItemStack BiblioCraft:Bibliotheca. 64xtile.BiblioBookcase@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: Armor Stand, 0
-override called. Params: BiblioCraft, Armor Stand
-Found ItemStack BiblioCraft:Armor Stand. 64xtile.BiblioArmorStand@0
+override called. Params: BiblioCraft, Armor Stand, 0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioPotionShelf, 0
-override called. Params: BiblioCraft, BiblioPotionShelf
+override called. Params: BiblioCraft, BiblioPotionShelf, 0
+Regex match found! BiblioCraft:BiblioPotionShelf matches BiblioCraft:BiblioPotionShelf.
 Found ItemStack BiblioCraft:BiblioPotionShelf. 64xtile.BiblioPotionShelf@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioShelf, 0
-override called. Params: BiblioCraft, BiblioShelf
+override called. Params: BiblioCraft, BiblioShelf, 0
+Regex match found! BiblioCraft:BiblioShelf matches BiblioCraft:BiblioShelf.
 Found ItemStack BiblioCraft:BiblioShelf. 64xtile.BiblioShelf@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioRack, 0
-override called. Params: BiblioCraft, BiblioRack
+override called. Params: BiblioCraft, BiblioRack, 0
+Regex match found! BiblioCraft:BiblioRack matches BiblioCraft:BiblioRack.
 Found ItemStack BiblioCraft:BiblioRack. 64xtile.BiblioRack@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioCase, 0
-override called. Params: BiblioCraft, BiblioCase
+override called. Params: BiblioCraft, BiblioCase, 0
+Regex match found! BiblioCraft:BiblioCase matches BiblioCraft:BiblioCase.
 Found ItemStack BiblioCraft:BiblioCase. 64xtile.BiblioCase@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioLabel, 0
-override called. Params: BiblioCraft, BiblioLabel
+override called. Params: BiblioCraft, BiblioLabel, 0
+Regex match found! BiblioCraft:BiblioLabel matches BiblioCraft:BiblioLabel.
 Found ItemStack BiblioCraft:BiblioLabel. 64xtile.BiblioLabel@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioDesk, 0
-override called. Params: BiblioCraft, BiblioDesk
+override called. Params: BiblioCraft, BiblioDesk, 0
+Regex match found! BiblioCraft:BiblioDesk matches BiblioCraft:BiblioDesk.
 Found ItemStack BiblioCraft:BiblioDesk. 64xtile.BiblioDesk@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioTable, 0
-override called. Params: BiblioCraft, BiblioTable
+override called. Params: BiblioCraft, BiblioTable, 0
+Regex match found! BiblioCraft:BiblioTable matches BiblioCraft:BiblioTable.
 Found ItemStack BiblioCraft:BiblioTable. 64xtile.BiblioTable@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioLamp, 0
-override called. Params: BiblioCraft, BiblioLamp
+override called. Params: BiblioCraft, BiblioLamp, 0
+Regex match found! BiblioCraft:BiblioLamp matches BiblioCraft:BiblioLamp.
 Found ItemStack BiblioCraft:BiblioLamp. 64xtile.BiblioLamp@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioIronLamp, 0
-override called. Params: BiblioCraft, BiblioIronLamp
+override called. Params: BiblioCraft, BiblioIronLamp, 0
+Regex match found! BiblioCraft:BiblioIronLamp matches BiblioCraft:BiblioIronLamp.
 Found ItemStack BiblioCraft:BiblioIronLamp. 64xtile.BiblioIronLamp@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioLantern, 0
-override called. Params: BiblioCraft, BiblioLantern
+override called. Params: BiblioCraft, BiblioLantern, 0
+Regex match found! BiblioCraft:BiblioLantern matches BiblioCraft:BiblioLantern.
 Found ItemStack BiblioCraft:BiblioLantern. 64xtile.BiblioLantern@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioIronLantern, 0
-override called. Params: BiblioCraft, BiblioIronLantern
+override called. Params: BiblioCraft, BiblioIronLantern, 0
+Regex match found! BiblioCraft:BiblioIronLantern matches BiblioCraft:BiblioIronLantern.
 Found ItemStack BiblioCraft:BiblioIronLantern. 64xtile.BiblioIronLantern@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: Typesetting Machine, 0
-override called. Params: BiblioCraft, Typesetting Machine
-Found ItemStack BiblioCraft:Typesetting Machine. 64xtile.BiblioType@0
+override called. Params: BiblioCraft, Typesetting Machine, 0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: Printing Press, 0
-override called. Params: BiblioCraft, Printing Press
-Found ItemStack BiblioCraft:Printing Press. 64xtile.BiblioPress@0
+override called. Params: BiblioCraft, Printing Press, 0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioStuffs, 0
-override called. Params: BiblioCraft, BiblioStuffs
+override called. Params: BiblioCraft, BiblioStuffs, 0
+Regex match found! BiblioCraft:BiblioStuffs matches BiblioCraft:BiblioStuffs.
 Found ItemStack BiblioCraft:BiblioStuffs. 64xtile.BiblioStuffs@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioMapFrames, 0
-override called. Params: BiblioCraft, BiblioMapFrames
+override called. Params: BiblioCraft, BiblioMapFrames, 0
+Regex match found! BiblioCraft:BiblioMapFrames matches BiblioCraft:BiblioMapFrames.
 Found ItemStack BiblioCraft:BiblioMapFrames. 64xtile.BiblioMapFrames@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioSeats, 0
-override called. Params: BiblioCraft, BiblioSeats
+override called. Params: BiblioCraft, BiblioSeats, 0
+Regex match found! BiblioCraft:BiblioSeats matches BiblioCraft:BiblioSeats.
 Found ItemStack BiblioCraft:BiblioSeats. 64xtile.BiblioSeats@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioSwordPedestal, 0
-override called. Params: BiblioCraft, BiblioSwordPedestal
+override called. Params: BiblioCraft, BiblioSwordPedestal, 0
+Regex match found! BiblioCraft:BiblioSwordPedestal matches BiblioCraft:BiblioSwordPedestal.
 Found ItemStack BiblioCraft:BiblioSwordPedestal. 64xtile.BiblioSwordPedestal@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioFancySign, 0
-override called. Params: BiblioCraft, BiblioFancySign
+override called. Params: BiblioCraft, BiblioFancySign, 0
+Regex match found! BiblioCraft:BiblioFancySign matches BiblioCraft:BiblioFancySign.
 Found ItemStack BiblioCraft:BiblioFancySign. 64xtile.BiblioFancySign@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioWorkbench, 0
-override called. Params: BiblioCraft, BiblioWorkbench
+override called. Params: BiblioCraft, BiblioWorkbench, 0
+Regex match found! BiblioCraft:BiblioWorkbench matches BiblioCraft:BiblioWorkbench.
 Found ItemStack BiblioCraft:BiblioWorkbench. 64xtile.BiblioWorkbench@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioBell, 0
-override called. Params: BiblioCraft, BiblioBell
+override called. Params: BiblioCraft, BiblioBell, 0
+Regex match found! BiblioCraft:BiblioBell matches BiblioCraft:BiblioBell.
 Found ItemStack BiblioCraft:BiblioBell. 64xtile.BiblioBell@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioTypewriter, 0
-override called. Params: BiblioCraft, BiblioTypewriter
+override called. Params: BiblioCraft, BiblioTypewriter, 0
+Regex match found! BiblioCraft:BiblioTypewriter matches BiblioCraft:BiblioTypewriter.
 Found ItemStack BiblioCraft:BiblioTypewriter. 64xtile.BiblioTypewriter@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioClock, 0
-override called. Params: BiblioCraft, BiblioClock
+override called. Params: BiblioCraft, BiblioClock, 0
+Regex match found! BiblioCraft:BiblioClock matches BiblioCraft:BiblioClock.
 Found ItemStack BiblioCraft:BiblioClock. 64xtile.BiblioClock@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioFlatPainting, 0
-override called. Params: BiblioCraft, BiblioFlatPainting
+override called. Params: BiblioCraft, BiblioFlatPainting, 0
+Regex match found! BiblioCraft:BiblioFlatPainting matches BiblioCraft:BiblioFlatPainting.
 Found ItemStack BiblioCraft:BiblioFlatPainting. 64xtile.BiblioFlatPainting@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioSimplePainting, 0
-override called. Params: BiblioCraft, BiblioSimplePainting
+override called. Params: BiblioCraft, BiblioSimplePainting, 0
+Regex match found! BiblioCraft:BiblioSimplePainting matches BiblioCraft:BiblioSimplePainting.
 Found ItemStack BiblioCraft:BiblioSimplePainting. 64xtile.BiblioSimplePainting@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioMiddlePainting, 0
-override called. Params: BiblioCraft, BiblioMiddlePainting
+override called. Params: BiblioCraft, BiblioMiddlePainting, 0
+Regex match found! BiblioCraft:BiblioMiddlePainting matches BiblioCraft:BiblioMiddlePainting.
 Found ItemStack BiblioCraft:BiblioMiddlePainting. 64xtile.BiblioMiddlePainting@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioFancyPainting, 0
-override called. Params: BiblioCraft, BiblioFancyPainting
+override called. Params: BiblioCraft, BiblioFancyPainting, 0
+Regex match found! BiblioCraft:BiblioFancyPainting matches BiblioCraft:BiblioFancyPainting.
 Found ItemStack BiblioCraft:BiblioFancyPainting. 64xtile.BiblioFancyPainting@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioBorderlessPainting, 0
-override called. Params: BiblioCraft, BiblioBorderlessPainting
+override called. Params: BiblioCraft, BiblioBorderlessPainting, 0
+Regex match found! BiblioCraft:BiblioBorderlessPainting matches BiblioCraft:BiblioBorderlessPainting.
 Found ItemStack BiblioCraft:BiblioBorderlessPainting. 64xtile.BiblioBorderlessPainting@0
 The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: BiblioPaintPress, 0
-override called. Params: BiblioCraft, BiblioPaintPress
+override called. Params: BiblioCraft, BiblioPaintPress, 0
+Regex match found! BiblioCraft:BiblioPaintPress matches BiblioCraft:BiblioPaintPress.
 Found ItemStack BiblioCraft:BiblioPaintPress. 64xtile.BiblioPaintPress@0
+The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: BiblioCraft, BookcaseFilled, 0
+Regex match found! BiblioCraft:BookcaseFilled matches BiblioCraft:BookcaseFilled.
+Found ItemStack BiblioCraft:BookcaseFilled. 64xtile.BookcaseFilled@0
+The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: BiblioCraft, BiblioPaneler, 0
+Regex match found! BiblioCraft:BiblioPaneler matches BiblioCraft:BiblioPaneler.
+Found ItemStack BiblioCraft:BiblioPaneler. 64xtile.BiblioPaneler@0
+The function override_block is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: BiblioCraft, BiblioClipboard, 0
+Regex match found! BiblioCraft:BiblioClipboard matches BiblioCraft:BiblioClipboard.
+Found ItemStack BiblioCraft:BiblioClipboard. 64xtile.BiblioClipboard@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.tapeMeasure, 0
-override called. Params: BiblioCraft, item.tapeMeasure
+override called. Params: BiblioCraft, item.tapeMeasure, 0
+Regex match found! BiblioCraft:item.tapeMeasure matches BiblioCraft:item.tapeMeasure.
 Found ItemStack BiblioCraft:item.tapeMeasure. 1xitem.tapeMeasure@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.tape, 0
-override called. Params: BiblioCraft, item.tape
+override called. Params: BiblioCraft, item.tape, 0
+Regex match found! BiblioCraft:item.tape matches BiblioCraft:item.tape.
 Found ItemStack BiblioCraft:item.tape. 64xitem.tape@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioChase, 0
-override called. Params: BiblioCraft, item.BiblioChase
+override called. Params: BiblioCraft, item.BiblioChase, 0
+Regex match found! BiblioCraft:item.BiblioChase matches BiblioCraft:item.BiblioChase.
 Found ItemStack BiblioCraft:item.BiblioChase. 64xitem.BiblioChase@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.PrintPlate, 0
-override called. Params: BiblioCraft, item.PrintPlate
+override called. Params: BiblioCraft, item.PrintPlate, 0
+Regex match found! BiblioCraft:item.PrintPlate matches BiblioCraft:item.PrintPlate.
 Found ItemStack BiblioCraft:item.PrintPlate. 1xitem.PrintPlate@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.EnchantedPlate, 0
-override called. Params: BiblioCraft, item.EnchantedPlate
+override called. Params: BiblioCraft, item.EnchantedPlate, 0
+Regex match found! BiblioCraft:item.EnchantedPlate matches BiblioCraft:item.EnchantedPlate.
 Found ItemStack BiblioCraft:item.EnchantedPlate. 1xitem.EnchantedPlate@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioRedBook, 0
-override called. Params: BiblioCraft, item.BiblioRedBook
+override called. Params: BiblioCraft, item.BiblioRedBook, 0
+Regex match found! BiblioCraft:item.BiblioRedBook matches BiblioCraft:item.BiblioRedBook.
 Found ItemStack BiblioCraft:item.BiblioRedBook. 64xitem.BiblioRedBook@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioGlasses, 0
-override called. Params: BiblioCraft, item.BiblioGlasses
+override called. Params: BiblioCraft, item.BiblioGlasses, 0
+Regex match found! BiblioCraft:item.BiblioGlasses matches BiblioCraft:item.BiblioGlasses.
 Found ItemStack BiblioCraft:item.BiblioGlasses. 1xitem.BiblioGlasses@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioDrill, 0
-override called. Params: BiblioCraft, item.BiblioDrill
+override called. Params: BiblioCraft, item.BiblioDrill, 0
+Regex match found! BiblioCraft:item.BiblioDrill matches BiblioCraft:item.BiblioDrill.
 Found ItemStack BiblioCraft:item.BiblioDrill. 1xitem.BiblioDrill@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioCreativeLock, 0
-override called. Params: BiblioCraft, item.BiblioCreativeLock
+override called. Params: BiblioCraft, item.BiblioCreativeLock, 0
+Regex match found! BiblioCraft:item.BiblioCreativeLock matches BiblioCraft:item.BiblioCreativeLock.
 Found ItemStack BiblioCraft:item.BiblioCreativeLock. 1xitem.BiblioCreativeLock@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioClipboard, 0
-override called. Params: BiblioCraft, item.BiblioClipboard
+override called. Params: BiblioCraft, item.BiblioClipboard, 0
+Regex match found! BiblioCraft:item.BiblioClipboard matches BiblioCraft:item.BiblioClipboard.
 Found ItemStack BiblioCraft:item.BiblioClipboard. 1xitem.BiblioClipboard@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.seatBack, 0
-override called. Params: BiblioCraft, item.seatBack
+override called. Params: BiblioCraft, item.seatBack, 0
+Regex match found! BiblioCraft:item.seatBack matches BiblioCraft:item.seatBack.
 Found ItemStack BiblioCraft:item.seatBack. 64xitem.seatBack@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.seatBack2, 0
-override called. Params: BiblioCraft, item.seatBack2
+override called. Params: BiblioCraft, item.seatBack2, 0
+Regex match found! BiblioCraft:item.seatBack2 matches BiblioCraft:item.seatBack2.
 Found ItemStack BiblioCraft:item.seatBack2. 64xitem.seatBack@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.seatBack3, 0
-override called. Params: BiblioCraft, item.seatBack3
+override called. Params: BiblioCraft, item.seatBack3, 0
+Regex match found! BiblioCraft:item.seatBack3 matches BiblioCraft:item.seatBack3.
 Found ItemStack BiblioCraft:item.seatBack3. 64xitem.seatBack@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.seatBack4, 0
-override called. Params: BiblioCraft, item.seatBack4
+override called. Params: BiblioCraft, item.seatBack4, 0
+Regex match found! BiblioCraft:item.seatBack4 matches BiblioCraft:item.seatBack4.
 Found ItemStack BiblioCraft:item.seatBack4. 64xitem.seatBack@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.seatBack5, 0
-override called. Params: BiblioCraft, item.seatBack5
+override called. Params: BiblioCraft, item.seatBack5, 0
+Regex match found! BiblioCraft:item.seatBack5 matches BiblioCraft:item.seatBack5.
 Found ItemStack BiblioCraft:item.seatBack5. 64xitem.seatBack@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioMapTool, 0
-override called. Params: BiblioCraft, item.BiblioMapTool
+override called. Params: BiblioCraft, item.BiblioMapTool, 0
+Regex match found! BiblioCraft:item.BiblioMapTool matches BiblioCraft:item.BiblioMapTool.
 Found ItemStack BiblioCraft:item.BiblioMapTool. 1xitem.BiblioMapTool@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BiblioWayPointCompass, 0
-override called. Params: BiblioCraft, item.BiblioWayPointCompass
+override called. Params: BiblioCraft, item.BiblioWayPointCompass, 0
+Regex match found! BiblioCraft:item.BiblioWayPointCompass matches BiblioCraft:item.BiblioWayPointCompass.
 Found ItemStack BiblioCraft:item.BiblioWayPointCompass. 1xitem.BiblioWayPointCompass@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.HandDrill, 0
-override called. Params: BiblioCraft, item.HandDrill
+override called. Params: BiblioCraft, item.HandDrill, 0
+Regex match found! BiblioCraft:item.HandDrill matches BiblioCraft:item.HandDrill.
 Found ItemStack BiblioCraft:item.HandDrill. 1xitem.HandDrill@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.BigBook, 0
-override called. Params: BiblioCraft, item.BigBook
+override called. Params: BiblioCraft, item.BigBook, 0
+Regex match found! BiblioCraft:item.BigBook matches BiblioCraft:item.BigBook.
 Found ItemStack BiblioCraft:item.BigBook. 1xitem.BigBook@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.RecipeBook, 0
-override called. Params: BiblioCraft, item.RecipeBook
+override called. Params: BiblioCraft, item.RecipeBook, 0
+Regex match found! BiblioCraft:item.RecipeBook matches BiblioCraft:item.RecipeBook.
 Found ItemStack BiblioCraft:item.RecipeBook. 1xitem.RecipeBook@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.SlottedBook, 0
-override called. Params: BiblioCraft, item.SlottedBook
+override called. Params: BiblioCraft, item.SlottedBook, 0
+Regex match found! BiblioCraft:item.SlottedBook matches BiblioCraft:item.SlottedBook.
 Found ItemStack BiblioCraft:item.SlottedBook. 1xitem.SlottedBook@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.PaintingCanvas, 0
-override called. Params: BiblioCraft, item.PaintingCanvas
+override called. Params: BiblioCraft, item.PaintingCanvas, 0
+Regex match found! BiblioCraft:item.PaintingCanvas matches BiblioCraft:item.PaintingCanvas.
 Found ItemStack BiblioCraft:item.PaintingCanvas. 64xitem.PaintingCanvas@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.AtlasBook, 0
-override called. Params: BiblioCraft, item.AtlasBook
+override called. Params: BiblioCraft, item.AtlasBook, 0
+Regex match found! BiblioCraft:item.AtlasBook matches BiblioCraft:item.AtlasBook.
 Found ItemStack BiblioCraft:item.AtlasBook. 1xitem.AtlasBook@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.AtlasPlate, 0
-override called. Params: BiblioCraft, item.AtlasPlate
+override called. Params: BiblioCraft, item.AtlasPlate, 0
+Regex match found! BiblioCraft:item.AtlasPlate matches BiblioCraft:item.AtlasPlate.
 Found ItemStack BiblioCraft:item.AtlasPlate. 1xitem.AtlasPlate@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.TesterItem, 0
-override called. Params: BiblioCraft, item.TesterItem
+override called. Params: BiblioCraft, item.TesterItem, 0
+Regex match found! BiblioCraft:item.TesterItem matches BiblioCraft:item.TesterItem.
 Found ItemStack BiblioCraft:item.TesterItem. 1xitem.TesterItem@0
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.DeathCompass, 0
-override called. Params: BiblioCraft, item.DeathCompass
+override called. Params: BiblioCraft, item.DeathCompass, 0
+Regex match found! BiblioCraft:item.DeathCompass matches BiblioCraft:item.DeathCompass.
 Found ItemStack BiblioCraft:item.DeathCompass. 64xitem.DeathCompass@0
-Loading: AppliedEnergistics2.js
-getFacadeItem called.
-getSubTypes called.
-getNumberOfTypes called. Returned: 2040
 The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
-override called. Params: item.ItemFacade, 1381
-override called. Params: appliedenergistics2, item.ItemFacade
+override called. Params: BiblioCraft, item.PlumbLine, 0
+Regex match found! BiblioCraft:item.PlumbLine matches BiblioCraft:item.PlumbLine.
+Found ItemStack BiblioCraft:item.PlumbLine. 1xitem.PlumbLine@0
+The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: BiblioCraft, item.FramingSaw, 0
+Regex match found! BiblioCraft:item.FramingSaw matches BiblioCraft:item.FramingSaw.
+Found ItemStack BiblioCraft:item.FramingSaw. 1xitem.FramingSaw@0
+The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: BiblioCraft, item.FramingBoard, 0
+Regex match found! BiblioCraft:item.FramingBoard matches BiblioCraft:item.FramingBoard.
+Found ItemStack BiblioCraft:item.FramingBoard. 64xitem.FramingBoard@0
+The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: BiblioCraft, item.FramingSheet, 0
+Regex match found! BiblioCraft:item.FramingSheet matches BiblioCraft:item.FramingSheet.
+Found ItemStack BiblioCraft:item.FramingSheet. 64xitem.FramingSheet@0
+Loading: AppliedEnergistics2.js
+getFacadeItem called. Returned: appliedenergistics2:item.ItemFacade
+getSubTypes called.
+getNumberOfTypes called. Returned: 2474
+The function override_item is deprecated. Please use override instead! This function will be removed in a future version!
+override called. Params: appliedenergistics2, item.ItemFacade, 2296
+Regex match found! appliedenergistics2:item.ItemFacade matches appliedenergistics2:item.ItemFacade.
 Found ItemStack appliedenergistics2:item.ItemFacade. 64xitem.appliedenergistics2.ItemFacade@0

@@ -1,0 +1,17 @@
+{
+    "items":
+    [
+        {
+            "name":"Osmium Nugget",
+            "textureName":"nuggetOsmium"
+        },
+        {
+            "name":"Dark Iron Nugget",
+            "textureName":"nuggetDarkiron"
+        },
+        {
+            "name":"Yellorium Nugget",
+            "textureName":"nuggetYellorite"
+        }
+    ]
+}

@@ -9,3 +9,11 @@ recipes.addShaped(<factorization:DarkIronOre> * 16,
  [[<ThermalFoundation:Ore:4>, <ThermalFoundation:Ore:4>, <ThermalFoundation:Ore:4>],
   [<ThermalFoundation:Ore:4>, <Mekanism:BasicBlock:3>, <ThermalFoundation:Ore:4>],
   [<ThermalFoundation:Ore:4>, <ThermalFoundation:Ore:4>, <ThermalFoundation:Ore:4>]]);
+  
+#Dark Iron Nugget Support
+recipes.addShaped(<factorization:dark_iron_ingot>,
+ [[<customitems:dark_iron_nugget>, <customitems:dark_iron_nugget>, <customitems:dark_iron_nugget>],
+  [<customitems:dark_iron_nugget>, <customitems:dark_iron_nugget>, <customitems:dark_iron_nugget>],
+  [<customitems:dark_iron_nugget>, <customitems:dark_iron_nugget>, <customitems:dark_iron_nugget>]]);
+  
+recipes.addShapeless(<customitems:dark_iron_nugget> * 9, [<factorization:dark_iron_ingot>]);

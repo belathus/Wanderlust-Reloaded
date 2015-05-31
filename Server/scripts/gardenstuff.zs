@@ -77,6 +77,11 @@ recipes.addShaped(<GardenContainers:pottery_pattern:9>,
   [<minecraft:clay>, <ore:dyePink>, <minecraft:clay>],
   [null, <minecraft:clay>, null]]);
 
+
+recipes.addShaped(<minecraft:iron_ingot> * 8, 
+ [[<ore:ingotWroughtIron>,<ore:ingotWroughtIron>,<ore:ingotWroughtIron>],
+  [<ore:ingotWroughtIron>,<ore:dustCharcoal>,<ore:ingotWroughtIron>],
+  [<ore:ingotWroughtIron>,<ore:ingotWroughtIron>,<ore:ingotWroughtIron>]]);
   
 
 
