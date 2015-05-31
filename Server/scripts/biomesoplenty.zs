@@ -97,6 +97,7 @@ recipes.addShaped(<BiomesOPlenty:dart:1> * 8,
 #Adjustment of Ambrosia
 recipes.remove(<BiomesOPlenty:food:10>);
 recipes.addShapeless(<BiomesOPlenty:food:10> * 1, [<harvestcraft:potItem>, <Thaumcraft:ItemWispEssence>, <BiomesOPlenty:honeyBlock>, <BiomesOPlenty:flowers2:6>, <BiomesOPlenty:coral1:11>, <BiomesOPlenty:food>, <BiomesOPlenty:plants:15>, <BiomesOPlenty:misc:10>, <minecraft:sugar>]);
+<<<<<<< HEAD
 
 #Nerfing Flesh blocks
 val blockMeatRaw = <ore:blockMeatRaw>;
@@ -114,3 +115,16 @@ recipes.addShapeless(<BiomesOPlenty:misc:5>, [<BiomesOPlenty:coral1:14>]);
 
 #Add persimmon to the oredictionary
 oreDict.cropPersimmon.add(<BiomesOPlenty:food:8>);
+=======
+
+#Nerfing Flesh blocks
+val blockMeatRaw = <ore:blockMeatRaw>;
+blockMeatRaw.remove(<BiomesOPlenty:flesh>);
+
+#make some BoP materials useful
+furnace.addRecipe(<minecraft:glass>, <BiomesOPlenty:hardSand>, 0.5); #smelt hardened sand to glass
+furnace.addRecipe(<ThermalFoundation:material:64>, <BiomesOPlenty:gemOre:11>, 0.5); #smelt malachite to copper
+
+#Add persimmon to the oredictionary
+oreDict.cropPersimmon.add(<BiomesOPlenty:food:8>);
+>>>>>>> origin/master
